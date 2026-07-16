@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "fe4808f5-44cf-44dc-8abd-31cbea71d8c4",
+    });
+  });
+</script>
+</body>  
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
